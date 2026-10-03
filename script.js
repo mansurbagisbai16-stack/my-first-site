@@ -23,7 +23,7 @@ function showMessage(service) {
 function contactMessage() {
 
     alert(
-        "Спасибо за интерес! Здесь можно добавить Telegram, Instagram или Email."
+        "tsmanss"
     );
 
 }
