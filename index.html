@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мой крутой сайт</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">MANSUR</div>
+
+        <nav>
+            <a href="#home">Главная</a>
+            <a href="#about">О нас</a>
+            <a href="#services">Услуги</a>
+            <a href="#contact">Контакты</a>
+        </nav>
+
+        <button class="menu-btn" onclick="toggleMenu()">☰</button>
+    </header>
+
+
+    <main>
+
+        <!-- Главный экран -->
+        <section class="hero" id="home">
+
+            <div class="hero-text">
+                <p class="small-title">СӘЛЕМ , ҚАЛАЙСЫҢ</p>
+
+                <h1>
+                    Менің жеке сайтыма 
+                    <span>ҚОШ КЕЛДІҢДЕР</span>
+                    
+                </h1>
+
+                <p class="description">
+                     Қазіргі заманғы дизайн, әдемі анимациялар
+                     және ыңғайлы интерфейс — барлығы бір жерде.
+                    
+                </p>
+
+                <div class="buttons">
+                    <a href="#services" class="btn primary">
+                        Қарау
+                    </a>
+
+                    <a href="#about" class="btn secondary">
+                        Көбірек білу
+                    </a>
+                </div>
+            </div>
+
+            <div class="hero-card">
+                <div class="circle"></div>
+
+                <div class="card-content">
+                    <div class="icon">⚡</div>
+                    <h2>MANSTECH</h2>
+                    <p>Өз болашағынды жаса</p>
+                </div>
+            </div>
+
+        </section>
+
+
+        <!-- О нас -->
+        <section class="about" id="about">
+
+            <div class="section-title">
+                <p>ABOUT</p>
+                <h2>Неге біз?</h2>
+            </div>
+
+            <div class="features">
+
+                <div class="feature">
+                    <div class="feature-icon">🚀</div>
+                    <h3>Тез</h3>
+                    <p>
+                        Жылдам жұктелу, веб-сайттың ұздіксіз жұмысы.
+                    </p>
+                </div>
+
+                <div class="feature">
+                    <div class="feature-icon">🎨</div>
+                    <h3>Әдемі</h3>
+                    <p>
+                        Әдемі эффектілер және заманауи дизайндар.
+                    </p>
+                </div>
+
+                <div class="feature">
+                    <div class="feature-icon">💡</div>
+                    <h3>Ыңғайлы
+                    
+                    </h3>
+                    <p>
+                        Әрбір пайдаланушы үшін түсінікті интерфейс.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Услуги -->
+        <section class="services" id="services">
+
+            <div class="section-title">
+                <p>SERVICES</p>
+                <h2>Біз не ұсынамыз</h2>
+            </div>
+
+            <div class="cards">
+
+                <div class="service-card">
+                    <span>01</span>
+                    <h3>Веб-дизайн</h3>
+                    <p>
+                        Заманауи және стильді веб-сайттарды жасау.
+                    </p>
+                    <button onclick="showMessage('Web Design')">
+                        Көбірек білу →
+                    </button>
+                </div>
+
+                <div class="service-card">
+                    <span>02</span>
+                    <h3>Дамыту</h3>
+                    <p>
+                        Жылдам және ыңғайлы веб-қолданбаларды дамыту.
+                    </p>
+                    <button onclick="showMessage('Development')">
+                        Көбірек білу →
+                    </button>
+                </div>
+
+                <div class="service-card">
+                    <span>03</span>
+                    <h3>Анимация</h3>
+                    <p>
+                        Әдемі анимациялар және эффектілер қосу.
+                    </p>
+                    <button onclick="showMessage('Animation')">
+                        Көбірек білу →
+                    </button>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Контакты -->
+        <section class="contact" id="contact">
+
+            <div class="contact-box">
+
+                <p>Контакты</p>
+
+                <h2>
+                    Келісім бойынша бізге хабарласыңыз
+                    
+                </h2>
+
+                <button class="btn primary" onclick="contactMessage()">
+                    Контакты алу
+                </button>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+        <p>© 2026 NEXUS. Все права защищены.</p>
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
