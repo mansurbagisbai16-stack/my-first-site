@@ -1,46 +1,113 @@
-// Открытие меню на телефоне
+const cityData = {
 
-function toggleMenu() {
-    const nav = document.querySelector("nav");
+    astana: {
+        title: "Астана",
+        category: "СТОЛИЦА КАЗАХСТАНА",
+        image: "images/astana.jpeg",
+        description:
+            "Астана — столица Казахстана и один из самых современных городов Центральной Азии. Город расположен на реке Ишим и известен своей необычной современной архитектурой."
+    },
 
-    nav.classList.toggle("active");
+    almaty: {
+        title: "Алматы",
+        category: "ЮЖНАЯ СТОЛИЦА",
+        image: "images/almaty.jpeg",
+        description:
+            "Алматы — крупнейший город Казахстана. Он расположен у подножия Заилийского Алатау и является важным культурным, экономическим и образовательным центром страны."
+    },
+
+    aktau: {
+        title: "Актау",
+        category: "КАСПИЙСКОЕ МОРЕ",
+        image: "images/aktau.jpeg",
+        description:
+            "Актау — город на берегу Каспийского моря. Он известен морскими пейзажами, необычной природой Мангистау и красивыми видами побережья."
+    },
+
+    shymkent: {
+        title: "Шымкент",
+        category: "ЮЖНЫЙ КАЗАХСТАН",
+        image: "images/shymkent.jpeg",
+        description:
+            "Шымкент — один из крупнейших городов Казахстана. Это тёплый и зелёный город с богатой историей, культурой и традициями."
+    },
+
+    taraz: {
+        title: "Тараз",
+        category: "ДРЕВНИЙ ГОРОД",
+        image: "images/taraz.jpeg",
+        description:
+            "Тараз — один из древнейших городов Казахстана. Город имеет богатое историческое наследие и связан с Великим Шёлковым путём."
+    },
+
+    turkistan: {
+        title: "Туркестан",
+        category: "ИСТОРИЧЕСКИЙ ЦЕНТР",
+        image: "images/turkistan.jpeg",
+        description:
+            "Туркестан — один из главных исторических и духовных центров Казахстана. Город известен своим культурным наследием и древними памятниками."
+    }
+
+};
+
+
+/* Открыть информацию о городе */
+
+function showInfo(city) {
+
+    const data = cityData[city];
+
+    if (!data) {
+        return;
+    }
+
+    document.getElementById("modalTitle").textContent = data.title;
+
+    document.getElementById("modalCategory").textContent = data.category;
+
+    document.getElementById("modalDescription").textContent =
+        data.description;
+
+    document.getElementById("modalImage").style.backgroundImage =
+        `url("${data.image}")`;
+
+    document.getElementById("infoModal").classList.add("active");
+
+    document.body.style.overflow = "hidden";
 }
 
 
-// Кнопки "Подробнее"
+/* Закрыть окно */
 
-function showMessage(service) {
+function closeInfo() {
 
-    alert(
-        "Вы выбрали услугу: " + service
-    );
+    document.getElementById("infoModal").classList.remove("active");
 
+    document.body.style.overflow = "auto";
 }
 
 
-// Кнопка контактов
+/* Закрытие при клике по фону */
 
-function contactMessage() {
+document.getElementById("infoModal").addEventListener("click", function(event) {
 
-    alert(
-        "tsmanss"
-    );
+    if (event.target === this) {
 
-}
+        closeInfo();
+
+    }
+
+});
 
 
-// Закрываем меню после перехода по ссылке
+/* Закрытие клавишей Escape */
 
-const links = document.querySelectorAll("nav a");
+document.addEventListener("keydown", function(event) {
 
-links.forEach(function(link) {
+    if (event.key === "Escape") {
 
-    link.addEventListener("click", function() {
+        closeInfo();
 
-        document
-            .querySelector("nav")
-            .classList.remove("active");
-
-    });
+    }
 
 });

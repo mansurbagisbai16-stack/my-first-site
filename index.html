@@ -3,184 +3,289 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Мой крутой сайт</title>
+
+    <title>Казахстан — города Великой степи</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <header>
-        <div class="logo">MANSUR</div>
+    <!-- Фоновое свечение -->
+    <div class="background-glow"></div>
+
+    <!-- Навигация -->
+    <header class="navbar">
+        <div class="logo">KZ</div>
 
         <nav>
             <a href="#home">Главная</a>
-            <a href="#about">О нас</a>
-            <a href="#services">Услуги</a>
-            <a href="#contact">Контакты</a>
+            <a href="#cities">Города</a>
+            <a href="#about">О Казахстане</a>
         </nav>
-
-        <button class="menu-btn" onclick="toggleMenu()">☰</button>
     </header>
 
 
-    <main>
+    <!-- Главный экран -->
+    <section class="hero" id="home">
 
-        <!-- Главный экран -->
-        <section class="hero" id="home">
+        <div class="hero-content">
 
-            <div class="hero-text">
-                <p class="small-title">СӘЛЕМ , ҚАЛАЙСЫҢ</p>
-
-                <h1>
-                    Менің жеке сайтыма 
-                    <span>ҚОШ КЕЛДІҢДЕР</span>
-                    
-                </h1>
-
-                <p class="description">
-                     Қазіргі заманғы дизайн, әдемі анимациялар
-                     және ыңғайлы интерфейс — барлығы бір жерде.
-                    
-                </p>
-
-                <div class="buttons">
-                    <a href="#services" class="btn primary">
-                        Қарау
-                    </a>
-
-                    <a href="#about" class="btn secondary">
-                        Көбірек білу
-                    </a>
-                </div>
+            <div class="small-title">
+                🇰🇿 REPUBLIC OF KAZAKHSTAN
             </div>
 
-            <div class="hero-card">
-                <div class="circle"></div>
+            <h1>КАЗАХСТАН</h1>
 
-                <div class="card-content">
-                    <div class="icon">⚡</div>
-                    <h2>MANSTECH</h2>
-                    <p>Өз болашағынды жаса</p>
-                </div>
-            </div>
+            <p>
+                Открой для себя города Великой степи
+            </p>
 
-        </section>
+            <a href="#cities" class="hero-button">
+                Исследовать города ↓
+            </a>
+
+        </div>
+
+    </section>
 
 
-        <!-- О нас -->
-        <section class="about" id="about">
+    <!-- Города -->
+    <section class="cities-section" id="cities">
 
-            <div class="section-title">
-                <p>ABOUT</p>
-                <h2>Неге біз?</h2>
-            </div>
+        <div class="section-title">
 
-            <div class="features">
+            <span>DISCOVER</span>
 
-                <div class="feature">
-                    <div class="feature-icon">🚀</div>
-                    <h3>Тез</h3>
+            <h2>Города Казахстана</h2>
+
+            <p>
+                Каждый город имеет свою историю, культуру и уникальную атмосферу.
+            </p>
+
+        </div>
+
+
+        <div class="cities-grid">
+
+
+            <!-- Астана -->
+            <div class="city-card">
+
+                <img src="images/astana.jpeg" alt="Астана">
+
+                <div class="city-overlay"></div>
+
+                <div class="city-info">
+
+                    <span>СТОЛИЦА</span>
+
+                    <h3>Астана</h3>
+
                     <p>
-                        Жылдам жұктелу, веб-сайттың ұздіксіз жұмысы.
+                        Современная столица Казахстана
                     </p>
-                </div>
 
-                <div class="feature">
-                    <div class="feature-icon">🎨</div>
-                    <h3>Әдемі</h3>
-                    <p>
-                        Әдемі эффектілер және заманауи дизайндар.
-                    </p>
-                </div>
-
-                <div class="feature">
-                    <div class="feature-icon">💡</div>
-                    <h3>Ыңғайлы
-                    
-                    </h3>
-                    <p>
-                        Әрбір пайдаланушы үшін түсінікті интерфейс.
-                    </p>
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- Услуги -->
-        <section class="services" id="services">
-
-            <div class="section-title">
-                <p>SERVICES</p>
-                <h2>Біз не ұсынамыз</h2>
-            </div>
-
-            <div class="cards">
-
-                <div class="service-card">
-                    <span>01</span>
-                    <h3>Веб-дизайн</h3>
-                    <p>
-                        Заманауи және стильді веб-сайттарды жасау.
-                    </p>
-                    <button onclick="showMessage('Web Design')">
-                        Көбірек білу →
+                    <button onclick="showInfo('astana')">
+                        Подробнее
                     </button>
-                </div>
 
-                <div class="service-card">
-                    <span>02</span>
-                    <h3>Дамыту</h3>
-                    <p>
-                        Жылдам және ыңғайлы веб-қолданбаларды дамыту.
-                    </p>
-                    <button onclick="showMessage('Development')">
-                        Көбірек білу →
-                    </button>
-                </div>
-
-                <div class="service-card">
-                    <span>03</span>
-                    <h3>Анимация</h3>
-                    <p>
-                        Әдемі анимациялар және эффектілер қосу.
-                    </p>
-                    <button onclick="showMessage('Animation')">
-                        Көбірек білу →
-                    </button>
                 </div>
 
             </div>
 
-        </section>
 
+            <!-- Алматы -->
+            <div class="city-card">
 
-        <!-- Контакты -->
-        <section class="contact" id="contact">
+                <img src="images/almaty.jpeg" alt="Алматы">
 
-            <div class="contact-box">
+                <div class="city-overlay"></div>
 
-                <p>Контакты</p>
+                <div class="city-info">
 
-                <h2>
-                    Келісім бойынша бізге хабарласыңыз
-                    
-                </h2>
+                    <span>ЮЖНАЯ СТОЛИЦА</span>
 
-                <button class="btn primary" onclick="contactMessage()">
-                    Контакты алу
-                </button>
+                    <h3>Алматы</h3>
+
+                    <p>
+                        Город у подножия гор
+                    </p>
+
+                    <button onclick="showInfo('almaty')">
+                        Подробнее
+                    </button>
+
+                </div>
 
             </div>
 
-        </section>
 
-    </main>
+            <!-- Актау -->
+            <div class="city-card">
+
+                <img src="images/aktau.jpeg" alt="Актау">
+
+                <div class="city-overlay"></div>
+
+                <div class="city-info">
+
+                    <span>КАСПИЙСКОЕ МОРЕ</span>
+
+                    <h3>Актау</h3>
+
+                    <p>
+                        Город на берегу Каспия
+                    </p>
+
+                    <button onclick="showInfo('aktau')">
+                        Подробнее
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- Шымкент -->
+            <div class="city-card">
+
+                <img src="images/shymkent.jpeg" alt="Шымкент">
+
+                <div class="city-overlay"></div>
+
+                <div class="city-info">
+
+                    <span>ЮЖНЫЙ ГОРОД</span>
+
+                    <h3>Шымкент</h3>
+
+                    <p>
+                        Тёплый город с богатой историей
+                    </p>
+
+                    <button onclick="showInfo('shymkent')">
+                        Подробнее
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- Тараз -->
+            <div class="city-card">
+
+                <img src="images/taraz.jpeg" alt="Тараз">
+
+                <div class="city-overlay"></div>
+
+                <div class="city-info">
+
+                    <span>ДРЕВНИЙ ГОРОД</span>
+
+                    <h3>Тараз</h3>
+
+                    <p>
+                        Один из древнейших городов Казахстана
+                    </p>
+
+                    <button onclick="showInfo('taraz')">
+                        Подробнее
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- Туркестан -->
+            <div class="city-card">
+
+                <img src="images/turkistan.jpeg" alt="Туркестан">
+
+                <div class="city-overlay"></div>
+
+                <div class="city-info">
+
+                    <span>ИСТОРИЧЕСКИЙ ЦЕНТР</span>
+
+                    <h3>Туркестан</h3>
+
+                    <p>
+                        Духовный и исторический центр
+                    </p>
+
+                    <button onclick="showInfo('turkistan')">
+                        Подробнее
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- О Казахстане -->
+    <section class="about-section" id="about">
+
+        <div class="about-content">
+
+            <span>ABOUT KAZAKHSTAN</span>
+
+            <h2>Страна Великой степи</h2>
+
+            <p>
+                Казахстан — крупнейшая страна Центральной Азии,
+                известная своими бескрайними степями, горами,
+                озёрами и богатой историей.
+            </p>
+
+            <p>
+                Здесь сочетаются древняя культура и современные
+                города, создавая уникальную атмосферу страны.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- Модальное окно -->
+    <div class="modal" id="infoModal">
+
+        <div class="modal-content">
+
+            <button class="close-button" onclick="closeInfo()">
+                ×
+            </button>
+
+            <div class="modal-image" id="modalImage"></div>
+
+            <div class="modal-text">
+
+                <span id="modalCategory"></span>
+
+                <h2 id="modalTitle"></h2>
+
+                <p id="modalDescription"></p>
+
+            </div>
+
+        </div>
+
+    </div>
 
 
     <footer>
-        <p>© 2026 NEXUS. Все права защищены.</p>
+
+        <p>🇰🇿 Казахстан — страна Великой степи</p>
+
+        <p>© 2026</p>
+
     </footer>
 
 
