@@ -1,295 +1,263 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="kk">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Казахстан — города Великой степи</title>
-
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#101d3a">
+<title>130 ҰБТ — Дайындық платформасы</title>
+<link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-
-    <!-- Фоновое свечение -->
-    <div class="background-glow"></div>
-
-    <!-- Навигация -->
-    <header class="navbar">
-        <div class="logo">KZ</div>
-
-        <nav>
-            <a href="#home">Главная</a>
-            <a href="#cities">Города</a>
-            <a href="#about">О Казахстане</a>
-        </nav>
-    </header>
-
-
-    <!-- Главный экран -->
-    <section class="hero" id="home">
-
-        <div class="hero-content">
-
-            <div class="small-title">
-                🇰🇿 REPUBLIC OF KAZAKHSTAN
-            </div>
-
-            <h1>КАЗАХСТАН</h1>
-
-            <p>
-                Открой для себя города Великой степи
-            </p>
-
-            <a href="#cities" class="hero-button">
-                Исследовать города ↓
-            </a>
-
-        </div>
-
-    </section>
-
-
-    <!-- Города -->
-    <section class="cities-section" id="cities">
-
-        <div class="section-title">
-
-            <span>DISCOVER</span>
-
-            <h2>Города Казахстана</h2>
-
-            <p>
-                Каждый город имеет свою историю, культуру и уникальную атмосферу.
-            </p>
-
-        </div>
-
-
-        <div class="cities-grid">
-
-
-            <!-- Астана -->
-            <div class="city-card">
-
-                <img src="images/astana.jpeg" alt="Астана">
-
-                <div class="city-overlay"></div>
-
-                <div class="city-info">
-
-                    <span>СТОЛИЦА</span>
-
-                    <h3>Астана</h3>
-
-                    <p>
-                        Современная столица Казахстана
-                    </p>
-
-                    <button onclick="showInfo('astana')">
-                        Подробнее
-                    </button>
-
-                </div>
-
-            </div>
-
-
-            <!-- Алматы -->
-            <div class="city-card">
-
-                <img src="images/almaty.jpeg" alt="Алматы">
-
-                <div class="city-overlay"></div>
-
-                <div class="city-info">
-
-                    <span>ЮЖНАЯ СТОЛИЦА</span>
-
-                    <h3>Алматы</h3>
-
-                    <p>
-                        Город у подножия гор
-                    </p>
-
-                    <button onclick="showInfo('almaty')">
-                        Подробнее
-                    </button>
-
-                </div>
-
-            </div>
-
-
-            <!-- Актау -->
-            <div class="city-card">
-
-                <img src="images/aktau.jpeg" alt="Актау">
-
-                <div class="city-overlay"></div>
-
-                <div class="city-info">
-
-                    <span>КАСПИЙСКОЕ МОРЕ</span>
-
-                    <h3>Актау</h3>
-
-                    <p>
-                        Город на берегу Каспия
-                    </p>
-
-                    <button onclick="showInfo('aktau')">
-                        Подробнее
-                    </button>
-
-                </div>
-
-            </div>
-
-
-            <!-- Шымкент -->
-            <div class="city-card">
-
-                <img src="images/shymkent.jpeg" alt="Шымкент">
-
-                <div class="city-overlay"></div>
-
-                <div class="city-info">
-
-                    <span>ЮЖНЫЙ ГОРОД</span>
-
-                    <h3>Шымкент</h3>
-
-                    <p>
-                        Тёплый город с богатой историей
-                    </p>
-
-                    <button onclick="showInfo('shymkent')">
-                        Подробнее
-                    </button>
-
-                </div>
-
-            </div>
-
-
-            <!-- Тараз -->
-            <div class="city-card">
-
-                <img src="images/taraz.jpeg" alt="Тараз">
-
-                <div class="city-overlay"></div>
-
-                <div class="city-info">
-
-                    <span>ДРЕВНИЙ ГОРОД</span>
-
-                    <h3>Тараз</h3>
-
-                    <p>
-                        Один из древнейших городов Казахстана
-                    </p>
-
-                    <button onclick="showInfo('taraz')">
-                        Подробнее
-                    </button>
-
-                </div>
-
-            </div>
-
-
-            <!-- Туркестан -->
-            <div class="city-card">
-
-                <img src="images/turkistan.jpeg" alt="Туркестан">
-
-                <div class="city-overlay"></div>
-
-                <div class="city-info">
-
-                    <span>ИСТОРИЧЕСКИЙ ЦЕНТР</span>
-
-                    <h3>Туркестан</h3>
-
-                    <p>
-                        Духовный и исторический центр
-                    </p>
-
-                    <button onclick="showInfo('turkistan')">
-                        Подробнее
-                    </button>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- О Казахстане -->
-    <section class="about-section" id="about">
-
-        <div class="about-content">
-
-            <span>ABOUT KAZAKHSTAN</span>
-
-            <h2>Страна Великой степи</h2>
-
-            <p>
-                Казахстан — крупнейшая страна Центральной Азии,
-                известная своими бескрайними степями, горами,
-                озёрами и богатой историей.
-            </p>
-
-            <p>
-                Здесь сочетаются древняя культура и современные
-                города, создавая уникальную атмосферу страны.
-            </p>
-
-        </div>
-
-    </section>
-
-
-    <!-- Модальное окно -->
-    <div class="modal" id="infoModal">
-
-        <div class="modal-content">
-
-            <button class="close-button" onclick="closeInfo()">
-                ×
-            </button>
-
-            <div class="modal-image" id="modalImage"></div>
-
-            <div class="modal-text">
-
-                <span id="modalCategory"></span>
-
-                <h2 id="modalTitle"></h2>
-
-                <p id="modalDescription"></p>
-
-            </div>
-
-        </div>
-
+<header class="topbar">
+ <div class="nav">
+  <a class="brand" href="#home">130 <b>ҰБТ</b></a>
+  <nav class="navlinks">
+   <a href="#subjects">Пәндер</a>
+   <a href="#trial">Байқау тесті</a>
+   <a href="#features">Мүмкіндіктер</a>
+   <a href="#history">Нәтижелер</a>
+  </nav>
+  <button class="navbtn" id="themeBtn">☼ Тақырып</button>
+ </div>
+</header>
+
+<section class="hero" id="home">
+ <div class="hero-inner">
+  <div>
+   <div class="eyebrow">🎓 Оқуға арналған демо платформа</div>
+   <h1>Мақсатың — <span>130 ұпай.</span><br>Дайындығың — бүгін.</h1>
+   <p>Пәндерді таңда, тест тапсыр, уақытыңды бақыла және нәтижелеріңді талда. Барлығы бір жерде!</p>
+   <div class="actions">
+    <button class="btn primary" id="heroStart">Тестті бастау →</button>
+    <button class="btn secondary" id="heroTrial">Байқау тесті</button>
+   </div>
+  </div>
+  <div class="hero-art">
+   <div class="mock-card">
+    <div class="mock-top"><b>📊 Дайындық көрсеткіші</b><span>Үлгі</span></div>
+    <div class="mock-score">76<span> / 100%</span></div>
+    <div class="mock-line"><i></i></div>
+    <div class="mock-tags">
+     <span>✓ Тесттер</span>
+     <span>✓ Талдау</span>
+     <span>✓ Прогресс</span>
     </div>
+    <p style="font-size:13px;color:#697792;margin:18px 0 0">
+     Әрбір орындалған тест — алға жасалған қадам.
+    </p>
+   </div>
+  </div>
+ </div>
+</section>
 
+<main class="container">
+ <section class="stats">
+  <div class="stat"><strong>5</strong><small>Оқу бағыты</small></div>
+  <div class="stat"><strong>50+</strong><small>Үлгі сұрақ қоры</small></div>
+  <div class="stat"><strong>⏱</strong><small>Уақытпен тест</small></div>
+  <div class="stat"><strong>∞</strong><small>Қайта жаттығу</small></div>
+ </section>
 
-    <footer>
+ <section class="section" id="subjects">
+  <div class="section-head">
+   <div>
+    <div class="kicker">Дайындық бөлімі</div>
+    <h2>Пәнді таңда</h2>
+    <p class="sub">Әр пән бойынша шағын жаттығу тестін орында.</p>
+   </div>
+  </div>
 
-        <p>🇰🇿 Казахстан — страна Великой степи</p>
+  <div class="grid">
+   <article class="subject">
+    <div class="subject-icon">🏛️</div>
+    <h3>Қазақстан тарихы</h3>
+    <p>Маңызды тарихи оқиғалар, тұлғалар мен даталар.</p>
+    <div class="subject-foot">
+     <span class="pill">10 сұрақ</span>
+     <button class="btn blue subjectBtn" data-subject="history">Бастау</button>
+    </div>
+   </article>
 
-        <p>© 2026</p>
+   <article class="subject">
+    <div class="subject-icon">📚</div>
+    <h3>Оқу сауаттылығы</h3>
+    <p>Мәтінді түсіну, негізгі ой мен ақпаратты табу.</p>
+    <div class="subject-foot">
+     <span class="pill">10 сұрақ</span>
+     <button class="btn blue subjectBtn" data-subject="reading">Бастау</button>
+    </div>
+   </article>
 
-    </footer>
+   <article class="subject">
+    <div class="subject-icon">🧮</div>
+    <h3>Математикалық сауаттылық</h3>
+    <p>Күнделікті өмірдегі есептер мен логикалық тапсырмалар.</p>
+    <div class="subject-foot">
+     <span class="pill">10 сұрақ</span>
+     <button class="btn blue subjectBtn" data-subject="math">Бастау</button>
+    </div>
+   </article>
 
+   <article class="subject">
+    <div class="subject-icon">🌍</div>
+    <h3>География</h3>
+    <p>Материктер, табиғат, елдер және географиялық ұғымдар.</p>
+    <div class="subject-foot">
+     <span class="pill">10 сұрақ</span>
+     <button class="btn blue subjectBtn" data-subject="geo">Бастау</button>
+    </div>
+   </article>
 
-    <script src="script.js"></script>
+   <article class="subject">
+    <div class="subject-icon">🧬</div>
+    <h3>Биология</h3>
+    <p>Тірі ағзалар, жасуша және адам ағзасы туралы сұрақтар.</p>
+    <div class="subject-foot">
+     <span class="pill">10 сұрақ</span>
+     <button class="btn blue subjectBtn" data-subject="bio">Бастау</button>
+    </div>
+   </article>
 
+   <article class="subject">
+    <div class="subject-icon">📝</div>
+    <h3>Аралас жаттығу</h3>
+    <p>Әртүрлі пәндерден аралас сұрақтармен біліміңді тексер.</p>
+    <div class="subject-foot">
+     <span class="pill">15 сұрақ</span>
+     <button class="btn blue" id="mixedBtn">Бастау</button>
+    </div>
+   </article>
+  </div>
+ </section>
+
+ <section class="section" id="trial" style="padding-top:0">
+  <div class="mock-banner">
+   <div>
+    <div class="kicker" style="color:#ffd166">Өзіңді сынап көр</div>
+    <h3>Байқау тесті</h3>
+    <p>15 аралас сұрақ. Әр сұраққа жауап беріп, соңында нәтижең мен жауаптардың түсіндірмесін көр.</p>
+   </div>
+   <button class="btn primary" id="fullTrialBtn">Байқау тестін бастау →</button>
+  </div>
+ </section>
+
+ <section class="section" id="features" style="padding-top:0">
+  <div class="section-head">
+   <div>
+    <div class="kicker">Платформа мүмкіндіктері</div>
+    <h2>Дайындықты тиімді ететін құралдар</h2>
+   </div>
+  </div>
+
+  <div class="feature-grid">
+   <div class="feature">
+    <div>⏱️</div>
+    <b>Уақыт санағыш</b>
+    <p>Байқау тестінде уақытты бақылап, уақытты тиімді бөлуге жаттық.</p>
+   </div>
+   <div class="feature">
+    <div>📈</div>
+    <b>Нәтижені есептеу</b>
+    <p>Дұрыс жауаптар саны мен пайыздық көрсеткіш автоматты есептеледі.</p>
+   </div>
+   <div class="feature">
+    <div>💡</div>
+    <b>Қате жауапты талдау</b>
+    <p>Тест соңында дұрыс жауап пен қысқаша түсіндірмені қара.</p>
+   </div>
+   <div class="feature">
+    <div>🔀</div>
+    <b>Кездейсоқ сұрақтар</b>
+    <p>Тест басталған сайын сұрақтардың реті араласады.</p>
+   </div>
+   <div class="feature">
+    <div>📱</div>
+    <b>Телефонға бейімделген</b>
+    <p>Сайт компьютерде де, смартфонда да ашуға ыңғайлы.</p>
+   </div>
+   <div class="feature">
+    <div>💾</div>
+    <b>Нәтижелер тарихы</b>
+    <p>Осы браузерде соңғы тест нәтижелерін сақтап, қайта қарай аласың.</p>
+   </div>
+  </div>
+ </section>
+
+ <section class="panel" id="testPanel">
+  <div class="test-head">
+   <div>
+    <h3 id="testTitle">Тест</h3>
+    <div class="test-meta" id="testMeta">Жауапты таңда</div>
+   </div>
+   <div class="timer" id="timer">⏱ 00:00</div>
+  </div>
+
+  <div class="progress"><i id="progressBar"></i></div>
+
+  <div class="test-layout">
+   <div>
+    <div class="test-meta" id="questionCount"></div>
+    <div class="question" id="questionText"></div>
+    <div class="answers" id="answerList"></div>
+
+    <div class="test-buttons">
+     <button class="btn light" id="prevBtn">← Артқа</button>
+     <button class="btn blue" id="nextBtn">Келесі →</button>
+     <button class="btn primary" id="finishBtn" style="display:none">Тестті аяқтау</button>
+    </div>
+   </div>
+
+   <aside class="test-side">
+    <b>Сұрақтар тізімі</b>
+    <div class="number-grid" id="numberGrid"></div>
+    <p class="notice">Жасыл — жауап берілген. Көк — ағымдағы сұрақ.</p>
+   </aside>
+  </div>
+ </section>
+
+ <section class="panel" id="resultPanel">
+  <div class="test-head">
+   <h3>Тест нәтижесі</h3>
+   <button class="btn light" id="closeResult">Жабу</button>
+  </div>
+
+  <div class="result-box" id="resultSummary"></div>
+  <h3 style="margin-top:25px">Жауаптарды талдау</h3>
+  <div id="reviewList"></div>
+
+  <div class="actions">
+   <button class="btn blue" id="retryBtn">Қайта тапсыру</button>
+   <button class="btn light" id="backSubjectsBtn">Пәндерге оралу</button>
+  </div>
+ </section>
+
+ <section class="section" id="history">
+  <div class="section-head">
+   <div>
+    <div class="kicker">Жеке прогресс</div>
+    <h2>Соңғы нәтижелер</h2>
+    <p class="sub">Нәтижелер осы құрылғының браузерінде сақталады.</p>
+   </div>
+   <button class="btn outline" id="clearHistoryBtn">Тарихты тазалау</button>
+  </div>
+
+  <div class="history-list" id="historyList">
+   <div class="feature">
+    <p>Әзірге нәтиже жоқ. Алғашқы тестіңді орында!</p>
+   </div>
+  </div>
+ </section>
+
+ <p class="notice">
+  Ескерту: бұл — оқу мақсатындағы демонстрациялық жоба.
+  Сұрақтар үлгі ретінде құрастырылған және ресми ҰБТ сұрақтары емес.
+  Ресми тест форматы мен мазмұны өзгеруі мүмкін.
+  Нәтижелер тек осы браузерде сақталады.
+ </p>
+</main>
+
+<footer>© 2026 130 ҰБТ · Білім — болашақ кепілі</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
